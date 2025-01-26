@@ -1,0 +1,29 @@
+{
+    
+    "name":"Smart-info - Client",
+    "service": "client", // reprendre strictement le nom du service
+    "dockerComposeFile" : "../../docker-compose.dev.yaml",// chermin vers de dossier d'orchestration (cibler docker-compose.yaml)
+    "workspaceFolder": "/app",
+    "customizations": {
+        "vscode": {
+            "extensions": ["christian-kohler.npm-intellisense","VisualStudioExptTeam.vscodeintellicode","biomejs.biome","dsznajder.es7-react-js-snippets"],
+            // dans le marketplace de vscode, prendre après le "itemName"=nom de l'extension
+            "settings": {
+                "[javascript]": {
+                    // "editor.formatOnSave": true,
+                    // "editor.formatOnType": true,
+                    // "editor.defaultFormatter": "biomejs.biome"
+                },
+                "[javascriptreact]": {
+                    // "editor.formatOnSave": true,
+                    // "editor.formatOnType": true,
+                    // "editor.defaultFormatter": "biomejs.biome"
+                },
+                "editor.codeActionsOnSave": {
+                    "source.fixAll": "always"
+                }
+            }
+        }
+    }
+
+}

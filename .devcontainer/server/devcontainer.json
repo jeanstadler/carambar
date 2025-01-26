@@ -1,0 +1,23 @@
+{
+    
+    "name":"Mon Projet architecture",
+    "service": "server", // reprendre strictement le nom du service
+    "dockerComposeFile" : "../../docker-compose.dev.yaml",// chermin vers de dossier d'orchestration (cibler docker-compose.yaml)
+    "workspaceFolder": "/app",
+    "customizations": {
+        "vscode": {
+            "extensions": ["christian-kohler.npm-intellisense","VisualStudioExptTeam.vscodeintellicode","biomejs.biome","rangav.vscode-thunder-client"],
+            "settings": {
+                "[typescript]": {
+                    // "editor.formatOnSave": true,
+                    // "editor.formatOnType": true,
+                    // "editor.defaultFormatter": "biomejs.biome"
+                },
+                "editor.codeActionsOnSave": {
+                    "source.fixAll": "always"
+                }
+            }
+        }
+    }
+
+}
