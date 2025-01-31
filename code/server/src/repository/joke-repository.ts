@@ -2,12 +2,13 @@ import Joke from '../models/joke.model.js';
 
 class JokeRepository {
   public async getAllJokes() {
-
     return await Joke.findAll();
+    // .findAll() est une fonction fournie par sequelize
   }
 
   public async getJokeById(id: number) {
     return await Joke.findByPk(id);
+    // .findByPk(id) est une fonction fournie par sequelize
   }
 
   public async addJoke(question: string, answer: string) {

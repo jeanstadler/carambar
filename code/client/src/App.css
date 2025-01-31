@@ -1,42 +1,93 @@
-#root {
-  max-width: 1280px;
+/* Style général */
+body {
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+}
+
+main {
+  max-width: 800px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 20px;
+}
+
+/* Titres */
+h1 {
+  color: #333;
   text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+h2 {
+  color: #444;
+  font-size: 20px;
+  margin: 15px 0;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Sections et Articles */
+section {
+  background-color: white;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+article {
+  padding: 10px;
+  margin: 10px 0;
 }
 
-.card {
-  padding: 2em;
+/* Formulaires */
+form {
+  margin: 10px 0;
 }
 
-.read-the-docs {
-  color: #888;
+fieldset {
+  border: none;
+  padding: 5px 0;
+  margin: 0;
+}
+
+input {
+  margin: 5px 0;
+  padding: 5px;
+}
+
+/* Boutons */
+button {
+  background-color: #666;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  margin: 5px;
+  border-radius: 3px;
+}
+
+/* Liste des blagues */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background-color: white;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+}
+
+/* Messages */
+p {
+  margin: 10px 0;
+}
+
+p strong {
+  color: #666;
+}
+
+/* Message d'erreur */
+p[style*="color: red"] {
+  background-color: #ffeeee;
+  padding: 10px;
+  border: 1px solid red;
 }

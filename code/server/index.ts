@@ -6,6 +6,7 @@ const init = async () => {
   try {
     const jokeRepository = new JokeRepository();
     await jokeRepository.initializeJokes();
+    //ajout des données dans la base de données sqlite
     
     const server = new Server().createServer();
     server.listen(process.env.PORT, () => {

@@ -9,6 +9,7 @@ class Joke extends Model {
 
 Joke.init(
   {
+    // on défini la structure 
     id: {
       type: DataTypes.INTEGER,
       autoIncrement: true,
@@ -24,7 +25,7 @@ Joke.init(
     },
   },
   {
-    sequelize,
+    sequelize, // connexion à la base de données !!!
     modelName: 'Joke',
   }
 );
